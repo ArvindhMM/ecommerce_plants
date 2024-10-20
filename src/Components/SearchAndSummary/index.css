@@ -1,0 +1,74 @@
+.searchAndSummary {
+    margin: 10px 20px;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin: 5px auto;
+    padding: 1px;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+
+.searchIcon, .searchPlant {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    border-bottom: 1px solid black;
+}
+
+.searchBar input {
+    width: 25vw;
+    height: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 50px;
+    margin: 5px auto;
+    padding: 1px;
+}
+
+.summary p {
+    text-align: justify;
+    font-size: clamp(13px, 1.5vw, 17px);
+    margin-bottom: 5px;
+}
+
+.summary div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.customButton {
+    width: 114px;
+    height: 37px;
+    margin-right: 5px;
+    background-color: transparent;
+    color:  #0000004D;
+    border: 1px solid #0000004D;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.customButton.active {
+    background-color: #165315; 
+    color: white; 
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.customButton:hover {
+    scale: 1.05;
+}

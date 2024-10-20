@@ -1,0 +1,64 @@
+.Nursery {
+    padding: 20px;
+    text-align: center;
+}
+
+.Nursery h1 {
+    padding-top: 20px;
+    text-align: start;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.Nursery > div {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    gap: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+
+.Nursery > div::-webkit-scrollbar {
+    display: none; 
+}
+
+.plant-card {
+    width: 150px;
+    text-align: center;
+    flex-shrink: 0; 
+}
+
+.plant-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.plant-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666; 
+}
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-button.left {
+    left: 0;
+}
+
+.scroll-button.right {
+    right: 0;
+}
